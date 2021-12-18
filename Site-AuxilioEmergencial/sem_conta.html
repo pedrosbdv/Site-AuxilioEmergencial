@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conta Bancaria</title>
+	<!--Initial tags meta-->
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Questionario.css">
+
+    <!-- Import Google Icons Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="Imagens/.png">
+    <script src="https://kit.fontawesome.com/24c5e7c381.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    	@media print
+    	{
+    		.noprint
+    		{
+    			display: none;
+    		}
+            .print
+            {
+              display: inline !important;
+            }
+    		*
+    		{
+    			font-family: Arial, Helvetica, sans-serif;
+    			background: transparent !important;
+    			color: #000 !important;
+    			box-shadow: none !important;
+    			text-shadow: none !important;
+    			margin: 0 !important;
+    			padding: 0 !important;
+    			box-sizing: content-box !important; 
+    			border: 0 !important;
+    			z-index: auto !important;
+    			text-align: initial;
+    		}
+    		.form
+    		{
+    			display: inline;
+    		}
+    		.escrever
+    		{
+    			margin-top: 100px !important;
+    		}
+    		.Rg
+    		{
+    			width: 95px ;
+    		}
+    		.CPF
+    		{
+    			width: 100px ;
+    		}
+    		.Data
+    		{
+    			width: 80px ;
+    		}
+    		.Pai
+    		{
+				width: 110px ;
+    		}
+            .Mae
+            {
+                width: 120px;
+            }
+    		input
+    		{
+    			color: green !important;
+    			text-transform: uppercase;
+    		}
+			img 
+			{
+				max-width: 100%;
+				position: absolute;
+				left:1px !important;
+			}
+            hr
+            {
+                border-color: red !important;
+                margin-top: 30px !important;
+            }
+    	}
+    </style>
+</head>
+
+<body>
+ 	<img class="imagem_governo" style="position:absolute;top:-100px;left:330px;" src="Governo.png">
+    <div class="form">
+      <p class="noprint">ATENÇÃO:Siga os passos abaixo para o abrimento de uma conta.</p>
+      <p class="noprint" style="color:red;">1 - Preencha os dados corretos</p>
+      <p class="noprint" style="color:red;">2 - Apos isso imprima o boleto</p>
+      <p class="noprint" style="color:red;">3 - levar para o banco e abrir uma conta.</p>
+        <form>
+        	<div class="escrever">
+        		<input class="Nome" type="text" placeholder="Nome" name=""><label class="print" style="display: none">Deseja abrir uma conta, para receber o auxilio emergencial.</label>
+
+        		<label class="print" style="display: none">Cujo o RG é: </label><input class="Rg" type="number" placeholder="RG" name="">
+
+        		<label class="print" style="display: none">e o CPF é: </label>
+        		<input class="CPF" type="text" placeholder="CPF" name="">
+
+        		<label class="print" style="display: none">cuja a data de nascimento é:</label>
+        		<input class="Data" type="text" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="">
+
+        		<label class="print" style="display: none">e o nome do pai: </label>
+        		<input class="Pai" type="text" placeholder="Nome do Pai" name="">
+
+        		<label class="print" style="display: none">e o nome da mãe: </label>
+        		<input class="Mae" type="text" placeholder="Nome da Mãe" name="">
+
+                <label class="print" style="display: none">que estuda na escola tecnica:</label>
+                <input class="Mae" type="text" placeholder="Nome da escola" name="">
+        	</div>
+        </form>
+        <a href="recebido.html"><button onclick="print()" class="noprint" type="submit" style="color:#ffdb00">Imprimir</button>
+        </a> 
+        <div class="print" style="display: none">
+            <br><br><br><br><br>
+            <label>Assinatura do Banco</label>
+            <label>_________________</label>
+            <label>Assinatura do Responsavel</label>
+            <label>_________________</label>
+        </div>
+    </div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste - Conhecimento</title>
+	<!--Initial tags meta-->
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Questionario.css">
+
+    <!-- Import Google Icons Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="Imagens/.png">
+    <script src="https://kit.fontawesome.com/24c5e7c381.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<img style="position:absolute;top:-100px;left:330px;" src="Governo.png">
+	<div class="form">
+		<h3>Questionario</h3>
+		<p>Responsa o questionario abaixo, para analisamos o seu pedido de auxilio emergencial.</p>
+		<form>
+			<input type="number" placeholder="Seu CEP" name="" required=""><br>
+			<div>
+				<label>Possui computador?</label>	
+				<input type="radio" id="computer" value="Compu"  name="PC" checked="" > Sim
+				<input type="radio" id="dissapper" name="PC" > Não
+				<input id="computador" type="text" placeholder="Coque as configurações" name="" ><br>
+			</div>
+			<br>
+			<div>
+				<label>Possui NootBook?</label>	
+				<input type="radio" id="book" value="noot1"   name="Noot" checked="" > Sim
+				<input type="radio" id="bookdi" value="noot2" name="Noot" > Não
+				<input id="noot" type="text" placeholder="Coque as configurações" name="" ><br>
+			</div>
+			<br>
+			<div>
+				<label>Possui Celular?</label>	
+				<input type="radio" id="cells" value="cell1"   name="Celular" checked=""> Sim
+				<input type="radio" id="cellsdi" value="cell2" name="Celular"> Não
+				<input id="celular" type="text" placeholder="Coque as configurações" name="" ><br>
+			</div>
+			<br>
+			<div>
+				<label>Possui mais dipositivos?</label>	
+				<input type="radio" id="others"     value="other1"  name="outros" checked=""> Sim
+				<input type="radio" id="othersdi" value="other2" name="outros"> Não
+				<input id="dispositivos" type="text" placeholder="Coque as configurações" name="" ><br>
+			</div>
+			<br>
+			<div>
+				<label>Possui internet?</label>	
+				<input type="radio" id="nets" value="net1"  name="internet" checked=""> Sim
+				<input type="radio" id="netsdi" value="net2" name="internet"> Não
+				<input id="internet" type="text" placeholder="Coque as configurações" name="" ><br>
+			</div>
+			<a href="agradecimentos.html"><button id="analisar" style="color: #ffdb00" type="button">Analisar</button></a>
+		</form>
+		
+
+		<script type="text/javascript">
+			
+				
+		
+			//Computador
+			var computter = document.getElementById("computer"); 
+			var desaparecer = document.getElementById("dissapper");
+			var computador = document.getElementById("computador");
+
+			// NootBook
+			var nootBook = document.getElementById("book");
+			var sumir = document.getElementById("bookdi");
+			var botaoNot = document.getElementById("noot");
+
+			//Celular 
+			var cellphone = document.getElementById("cells");
+			var mudar = document.getElementById("cellsdi");
+			var botaophone = document.getElementById("celular");
+
+			//Dispositivos 
+			var others = document.getElementById("others");
+			var trocar = document.getElementById("othersdi");
+			var botaoDispo = document.getElementById("dispositivos");
+
+			// Internet
+			var internet = document.getElementById("nets");
+			var tirar = document.getElementById("netsdi");
+			var botaonet = document.getElementById("internet");
+
+			//Botao
+			var analisar = document.getElementById("analisar");
+			
+			//Computador
+			
+			computter.addEventListener('click', function() 
+			{	
+				if (computador.style.display=='none')
+				{
+					computador.style.display="block";
+				}
+			})
+			desaparecer.addEventListener('click', function() 
+			{	
+				if(computador.style.display=='none')
+				{
+				   computador.style.display="block";
+				}
+				else (computador.style.display=='block')
+				{
+					computador.style.display="none";
+				}
+			})
+
+
+
+
+			//NootBook
+			nootBook.addEventListener('click', function() 
+			{	
+				if (botaoNot.style.display=='none')
+				{
+					botaoNot.style.display="block";
+				}
+			})
+			sumir.addEventListener('click', function() 
+			{	
+				if(botaoNot.style.display=='none')
+				{
+				   botaoNot.style.display="block";
+				}
+				else (botaoNot.style.display=='block')
+				{
+					botaoNot.style.display="none";
+				}
+			})
+
+			//Celular
+
+			cellphone.addEventListener('click', function() 
+			{	
+				if (botaophone.style.display=='none')
+				{
+					botaophone.style.display="block";
+				}
+			})
+			mudar.addEventListener('click', function() 
+			{	
+				if(botaophone.style.display=='none')
+				{
+				   botaophone.style.display="block";
+				}
+				else (botaophone.style.display=='block')
+				{
+					botaophone.style.display="none";
+				}
+			})
+
+			//Outros Dispositivos
+
+			others.addEventListener('click', function() 
+			{	
+				if (botaoDispo.style.display=='none')
+				{
+					botaoDispo.style.display="block";
+				}
+			})
+			trocar.addEventListener('click', function() 
+			{	
+				if(botaoDispo.style.display=='none')
+				{
+				   botaoDispo.style.display="block";
+				}
+				else (botaoDispo.style.display=='block')
+				{
+					botaoDispo.style.display="none";
+				}
+			})
+
+			//Internet
+			internet.addEventListener('click', function() 
+			{	
+				if (botaonet.style.display=='none')
+				{
+					botaonet.style.display="block";
+				}
+			})
+			tirar.addEventListener('click', function() 
+			{	
+				if(botaonet.style.display=='none')
+				{
+				   botaonet.style.display="block";
+				}
+				else (botaonet.style.display=='block')
+				{
+					botaonet.style.display="none";
+				}
+			})	
+		</script>
+		
+	</div>
+</body>
+
+</html>
+

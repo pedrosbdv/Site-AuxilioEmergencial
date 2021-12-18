@@ -1,0 +1,127 @@
+body 
+{
+	padding: 0;
+	margin:0;
+	font-family: 'Signika', sans-serif;
+	background-color: #0190ca;
+}
+
+.form
+{
+	font-family: 'Signika', sans-serif;
+	position: relative;
+	top:100px;
+	z-index: 1;
+	background: #FFFFFF;
+	opacity: 99%;
+	max-width: 260px;
+	margin: 200px auto 100px;
+	padding: 10px 45px 30px 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	border-radius: 10px;
+}
+
+form p 
+{
+	font-size: 15px;
+	padding: 1px;
+	text-align: center;
+}
+
+form input
+{
+	outline: 0;
+	border-radius: 10px;
+	background: #F6F7F1;
+	color:black;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+}
+.receber
+{
+	outline: 0;
+	border-radius: 10px;
+	background: #F6F7F1;
+	color:red;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+}
+
+.form input:hover
+{
+	background-color:ghostwhite;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+	color: blue;
+	transition: all 1s ease 0s;
+}
+
+.form button
+{
+	text-transform: uppercase;
+	outline: 0;
+	border-radius: 10px;
+	background: #F6F7F1;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: blue;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	cursor:pointer;
+	background-color:#0190ca; 
+}
+.form button:hover
+{
+	background: green;
+}
+
+.Estado, .Cidade
+{
+	outline: 0;
+	border-radius: 10px;
+	background: #F6F7F1;
+	width: 100%;
+	color:black;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Signika', sans-serif;
+}
+
+.Estado select, .Cidade select
+
+{
+	font-family: 'Signika', sans-serif;
+	color:black;
+	font-size: 14px;
+	background: #F6F7F1;
+}
+
+.Cidade label
+{
+	margin-left: -20px;
+	color: #737575;
+	font-weight: bold;
+}
+
+.Estado label
+{
+	margin-left: -35px;
+	color: #737575;
+	font-weight: bold;
+}

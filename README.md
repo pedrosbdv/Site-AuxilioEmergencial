@@ -1,7 +1,3 @@
-# Site-AuxilioEmergencial
-
-
-
 <h2>Objetivo do site</h2>
 <p>Site desenvolvido em quanto cursava o ensino tecnico da Etec Lauro Gomes para uma atividade, que simula um auxilio emergencial</p>
 
